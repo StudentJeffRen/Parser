@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4596A76A23B2537700044574 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4596A76923B2537700044574 /* main.c */; };
+		4582A90723B7DBFC002A4B4E /* tokenIO.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 4582A90623B7DBFC002A4B4E /* tokenIO.o */; };
+		4582A90923B7DCC6002A4B4E /* util.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 4582A90823B7DCC5002A4B4E /* util.o */; };
+		4596A77923B26C6000044574 /* parse_print.c in Sources */ = {isa = PBXBuildFile; fileRef = 4596A77423B26C6000044574 /* parse_print.c */; };
+		4596A77C23B2748300044574 /* parse.c in Sources */ = {isa = PBXBuildFile; fileRef = 4596A77B23B2748300044574 /* parse.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +26,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4582A90423B7D72C002A4B4E /* tokenListIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tokenListIO.h; sourceTree = "<group>"; };
+		4582A90623B7DBFC002A4B4E /* tokenIO.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = tokenIO.o; sourceTree = "<group>"; };
+		4582A90823B7DCC5002A4B4E /* util.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = util.o; sourceTree = "<group>"; };
 		4596A76623B2537700044574 /* Parser */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Parser; sourceTree = BUILT_PRODUCTS_DIR; };
-		4596A76923B2537700044574 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		4596A77323B26C6000044574 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		4596A77423B26C6000044574 /* parse_print.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parse_print.c; sourceTree = "<group>"; };
+		4596A77623B26C6000044574 /* parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parse.h; sourceTree = "<group>"; };
+		4596A77723B26C6000044574 /* parse_print.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parse_print.h; sourceTree = "<group>"; };
+		4596A77823B26C6000044574 /* libs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libs.h; sourceTree = "<group>"; };
+		4596A77A23B26D0B00044574 /* scan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scan.h; sourceTree = "<group>"; };
+		4596A77B23B2748300044574 /* parse.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = parse.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4582A90723B7DBFC002A4B4E /* tokenIO.o in Frameworks */,
+				4582A90923B7DCC6002A4B4E /* util.o in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,7 +71,16 @@
 		4596A76823B2537700044574 /* Parser */ = {
 			isa = PBXGroup;
 			children = (
-				4596A76923B2537700044574 /* main.c */,
+				4582A90423B7D72C002A4B4E /* tokenListIO.h */,
+				4596A77423B26C6000044574 /* parse_print.c */,
+				4596A77723B26C6000044574 /* parse_print.h */,
+				4596A77B23B2748300044574 /* parse.c */,
+				4596A77623B26C6000044574 /* parse.h */,
+				4596A77A23B26D0B00044574 /* scan.h */,
+				4596A77823B26C6000044574 /* libs.h */,
+				4582A90623B7DBFC002A4B4E /* tokenIO.o */,
+				4596A77323B26C6000044574 /* util.h */,
+				4582A90823B7DCC5002A4B4E /* util.o */,
 			);
 			path = Parser;
 			sourceTree = "<group>";
@@ -119,7 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4596A76A23B2537700044574 /* main.c in Sources */,
+				4596A77923B26C6000044574 /* parse_print.c in Sources */,
+				4596A77C23B2748300044574 /* parse.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
